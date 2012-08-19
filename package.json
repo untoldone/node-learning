@@ -1,0 +1,8 @@
+{
+  "name": "my-first",
+  "version": "0.0.1",
+  "dependencies": {
+    "kue": ">= 0.4.0",
+    "email-templates": "*"
+  }
+}
