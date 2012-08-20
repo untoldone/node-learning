@@ -1,4 +1,11 @@
 var kue = require('kue');
+var redis = require('redis');
+var config = require('config');
+
+kue.redis.createClient = function () {
+  var client = redis.createClient(6379, config.host);
+  return client;
+}
 
 kue.app.listen(3001);
 
